@@ -1,5 +1,5 @@
 {
-  "name": "dht-universal",
+  "name": "@backbonedao/dht-universal",
   "version": "0.4.0",
   "description": "core/dht-universal",
   "type": "module",
