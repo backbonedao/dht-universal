@@ -1,7 +1,7 @@
 {
   "name": "dht-universal",
   "version": "0.4.0",
-  "description": "Universal wrapper for @hyperswarm/dht and @hyperswarm/dht-relay working in Node.js and the Browser",
+  "description": "core/dht-universal",
   "type": "module",
   "keywords": [
     "dht",
@@ -12,10 +12,21 @@
     "nodejs",
     "browser"
   ],
-  "homepage": "https://github.com/synonymdev/dht-universal#readme",
+  "homepage": "https://github.com/backbonedao/dht-universal#readme",
   "bugs": {
-    "url": "https://github.com/synonymdev/dht-universal/issues"
+    "url": "https://github.com/backbonedao/dht-universal/issues"
   },
+  "contributors": [
+    {
+      "name": "backbone://dao",
+      "email": "team@backbonedao.com",
+      "url": "https://backbonedao.com"
+    },
+    {
+      "name": "Ar Nazeh",
+      "email": "Ar.nazeh@gmail.com"
+    }
+  ],
   "license": "MIT",
   "files": [
     "*",
@@ -38,7 +49,7 @@
   "browser": "./src/relay.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/synonymdev/dht-universal.git"
+    "url": "git+https://github.com/backbonedao/dht-universal.git"
   },
   "scripts": {
     "build": "rm -rf dist && aegir build",
@@ -53,17 +64,17 @@
     "publish": "npm publish dist"
   },
   "dependencies": {
-    "@hyperswarm/dht": "^5.0.17",
-    "@hyperswarm/dht-relay": "^0.2.1",
+    "@hyperswarm/dht": "git+https://github.com/backbonedao/dht.git",
+    "@hyperswarm/dht-relay": "git+https://github.com/backbonedao/dht-relay.git",
     "isomorphic-ws": "^4.0.1"
   },
   "devDependencies": {
     "@types/ws": "^8.2.2",
     "aegir": "^36.1.3",
     "b4a": "^1.3.1",
-    "corestore": "^6.0.1-alpha.9",
+    "corestore": "git+https://github.com/backbonedao/data-manager.git",
     "hypercore-crypto": "^3.1.1",
-    "hyperswarm": "^3.0.1",
+    "hyperswarm": "git+https://github.com/backbonedao/swarm.git",
     "random-access-memory": "^4.0.0"
   },
   "eslintConfig": {
