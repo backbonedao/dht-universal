@@ -27,7 +27,7 @@
       "email": "Ar.nazeh@gmail.com"
     }
   ],
-  "license": "MIT",
+  "license": "AGPL-3.0-or-later",
   "files": [
     "*",
     "!**/*.tsbuildinfo"
@@ -64,17 +64,17 @@
     "publish": "npm publish dist"
   },
   "dependencies": {
-    "@hyperswarm/dht": "git+https://github.com/backbonedao/dht.git",
-    "@hyperswarm/dht-relay": "git+https://github.com/backbonedao/dht-relay.git",
+    "@hyperswarm/dht": "github:backbonedao/dht",
+    "@hyperswarm/dht-relay": "github:backbonedao/dht-relay",
     "isomorphic-ws": "^4.0.1"
   },
   "devDependencies": {
     "@types/ws": "^8.2.2",
     "aegir": "^36.1.3",
     "b4a": "^1.3.1",
-    "corestore": "git+https://github.com/backbonedao/data-manager.git",
-    "hypercore-crypto": "^3.1.1",
-    "hyperswarm": "git+https://github.com/backbonedao/swarm.git",
+    "corestore": "github:backbonedao/data-manager",
+    "hypercore-crypto": "github:backbonedao/crypto",
+    "hyperswarm": "github:backbonedao/swarm",
     "random-access-memory": "^4.0.0"
   },
   "eslintConfig": {
